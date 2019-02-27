@@ -13,12 +13,19 @@ html, body {
 
 .picture-frame {
     width: 300px;
-    /* display: inline-block; */
+    height: 300px;
     
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* display: inline-block; */
 }
 
 .picture-frame img {
-    width: 100%;
+    width: 175%;
+    /* flex-shrink:0; */
 }
 
 .picture-container {
@@ -26,7 +33,10 @@ html, body {
     min-height: 300px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
