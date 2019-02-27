@@ -11,21 +11,8 @@ html, body {
     width: 100%;
 }
 
-.picture-frame {
-    width: 300px;
-    height: 300px;
-    min-height: 300px;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    /* display: inline-block; */
-}
-
-.picture-frame img {
-    width: 175%;
-    /* flex-shrink:0; */
+.logo-text {
+    text-align: center;
 }
 
 .picture-container {
@@ -37,18 +24,43 @@ html, body {
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
+    /* -moz-box-sizing: border-box; */
     position: relative;
     overflow: hidden;
+    /* -moz-overflow: hidden; */
 }
+
+.picture-frame {
+    width: 300px;
+    /* max-height: 300px; */
+    /* max-height: 40%; */
+    min-height: 100%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+    /* -moz-overflow: hidden; */
+    /* display: inline-block; */
+}
+
+.picture-frame img {
+    max-width: 175%;
+    max-height: 300px;
+    flex-shrink: 0;
+}
+
+
 
 @media screen and (min-width: 500px) {
-    body {
-        /* background: red; */
+    .picture-frame {
+        /* width: 40%; */
     }
-}
+    }
 
 @media screen and (min-width: 1000px) {
-    body {
-        /* background: dodgerblue; */
+    .logo-text {
+        /* text-align: center; */
+        font-size: 45px;
     }
 }
