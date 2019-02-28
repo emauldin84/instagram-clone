@@ -44,6 +44,13 @@ html, body {
     /* display: inline-block; */
 }
 
+.picture-frame img {
+    max-width: 175%;
+    max-height: 300px;
+    flex-shrink: 0;
+    opacity: 0.9
+}
+
 /* using the :hover pseudo-class */
 .picture-frame:hover{
     /* outline: 2px solid red; */
@@ -57,12 +64,6 @@ html, body {
     
 }
 
-.picture-frame img {
-    max-width: 175%;
-    max-height: 300px;
-    flex-shrink: 0;
-    opacity: 0.9
-}
 
 @media screen and (min-width: 500px) {
     .picture-frame {
