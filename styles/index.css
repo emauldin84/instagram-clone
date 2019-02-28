@@ -11,27 +11,42 @@ html, body {
     width: 100%;
 }
 
+/* @keyframes roller-coaster {
+    0% {
+        opacity: 0;
+        transform: rotate(0);
+    }
+    50% {
+        opacity: 1.0;
+        transform: rotate(180);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(359);
+    }
+} */
+
 .logo-text {
     text-align: center;
 }
 
 .picture-container {
-    /* border: 1px solid black; */
-    min-height: 300px;
+    padding-bottom: 150px;
+    padding-top: 130px;
+    min-height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
-    /* -moz-box-sizing: border-box; */
     position: relative;
     overflow: hidden;
-    /* -moz-overflow: hidden; */
 }
 
 .picture-frame {
     width: 300px;
+    
     /* max-height: 300px; */
     /* max-height: 40%; */
     min-height: 100%;
@@ -39,40 +54,61 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
     overflow: hidden;
-    /* -moz-overflow: hidden; */
-    /* display: inline-block; */
+    padding: 15px;
 }
 
 .picture-frame img {
     max-width: 175%;
     max-height: 300px;
     flex-shrink: 0;
-    opacity: 0.9;
-    transition: transform 500ms;
-}
+    opacity: 0.8;
+    
+    /* transition: transform 500ms; */
 
+}
+.picture-frame p {
+    z-index: 99999;
+    margin: 5px;
+    padding-bottom: 0;
+
+}
 
 /* using the :hover pseudo-class */
 .picture-frame:hover{
     /* outline: 2px solid red; */
-    transform: scale(1.10);
+    /* transform: scale(1.10); */
     
 }
 
 .picture-frame:hover img{
-    transform: scale(1.10);
+    /* transform: scale(1.10); */
     opacity: 1.0;
     
 }
 
 .picture-frame.big {
     transform: scale(2.0);
+    transition: transform .3s;
     opacity: 1.0;
+    z-index: 99999;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: rgba(0,0,0,.2);
+    outline: .1px solid rgba(0,0,0,.3);;
+    
     
 }
 .picture-frame.big img {
     opacity: 1.0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.picture-frame.big p {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 10px;
 }
 
 @media screen and (min-width: 500px) {
@@ -87,3 +123,9 @@ html, body {
         font-size: 45px;
     }
 }
+
+outline: 1px solid lightgrey;
+background-color: coral;
+text-shadow: ;
+font-size: ;
+
