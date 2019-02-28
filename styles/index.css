@@ -48,7 +48,8 @@ html, body {
     max-width: 175%;
     max-height: 300px;
     flex-shrink: 0;
-    opacity: 0.9
+    opacity: 0.9;
+    transition: transform 500ms;
 }
 
 
@@ -68,13 +69,17 @@ html, body {
 .picture-frame.big {
     transform: scale(2.0);
     opacity: 1.0;
+    
+}
+.picture-frame.big img {
+    opacity: 1.0;
 }
 
 @media screen and (min-width: 500px) {
     .picture-frame {
         /* width: 40%; */
     }
-    }
+}
 
 @media screen and (min-width: 1000px) {
     .logo-text {
