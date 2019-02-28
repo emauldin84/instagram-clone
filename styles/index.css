@@ -51,6 +51,7 @@ html, body {
     opacity: 0.9
 }
 
+
 /* using the :hover pseudo-class */
 .picture-frame:hover{
     /* outline: 2px solid red; */
@@ -64,6 +65,10 @@ html, body {
     
 }
 
+.picture-frame.big {
+    transform: scale(2.0);
+    opacity: 1.0;
+}
 
 @media screen and (min-width: 500px) {
     .picture-frame {
