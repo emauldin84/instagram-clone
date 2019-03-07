@@ -34,7 +34,7 @@ function attachClickEvent(eachImage) {
     eachImage.addEventListener('click', respondToClick);
 }
 
-function dismissLargeImage(event) {
+function dismissLargeImage() {
     largeImageOutput.classList.add('hidden');
 }
 
